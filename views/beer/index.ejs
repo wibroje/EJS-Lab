@@ -5,8 +5,12 @@
 	<title>Beer Index</title>
 </head>
 <body>
+	<% include ../partials/header.ejs %>
+	<% include ../partials/nav.ejs %>
+
 	<% for (let i = 0; i < beer.length; i++) { %>
   <h1><%= beer[i].name %> </h1>
 <% } %>
+	<% include ../partials/footer.ejs %>
 </body>
 </html>
