@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<h1>Okay</h1>
+	<h1><%= message %></h1>
+	<h2><%= documentTitle %></h2>
+	<p><%= subTitle %></p>
+	<% if (showMore === true) { %>
+  		<div class='more'>
+    		<p>Comedy Videos NOW is a compilation of favorite comedy videos of the students of WDI-WC-Mar2018. It's super cool and great.</p>
+  		</div>
+	<% } %>
+
+	<% for (let i = 0; i < comedians.length; i++) { %>
+  <p>This is <%= comedians[i] %> </p>
+
+  <p>We have quotes by <% comedians.forEach(function(comedian) { %>
+  <%= comedian %>,
+<% }) %>.</p>
+<% } %>
+</body>
+</html>
